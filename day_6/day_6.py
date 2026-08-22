@@ -49,4 +49,7 @@ print(f'Last three items are {last_three}')
 del food_stuff_tp
 
 # Check if an item exists in tuple:
-print('nacho' in siblings)
+nordic_countries = ('Denmark', 'Finland','Iceland', 'Norway', 'Sweden')
+
+print('Is Estonia a nordic country?', 'Estonia' in nordic_countries)
+print('Is Iceland a nordic country?', 'Iceland' in nordic_countries)
