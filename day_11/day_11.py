@@ -402,3 +402,15 @@ def most_populated_countries(countries):
 
 result = most_populated_countries(countries_data)
 print(result)
+
+# Declare a function called categorize_countries that returns a list of
+# countries with some common pattern (you can find the countries list in this
+# repository as countries.js(eg 'land', 'ia', 'island', 'stan')).
+from data.countries import countries
+
+def categorize_countries(countries: list, pattern: str) -> list:
+    return [country for country in countries if pattern in country.lower()]
+
+for pattern in ['land', 'ia', 'island', 'stan']:
+    result = categorize_countries(countries, pattern)
+    print(f'{pattern}: {result}')
